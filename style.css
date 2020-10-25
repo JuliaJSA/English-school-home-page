@@ -1,0 +1,182 @@
+body {
+	background: #fcc;
+	}
+	
+img {
+	border: 0;
+	}	
+	
+header,
+nav,
+main {
+	display: block;
+	}	
+	
+	* {margin:0;
+       padding: 0;
+	   font-size: 100%}
+	   
+ a {
+	 text-decoration: none;
+	 color: #789;
+	 }   
+
+header {line-height: 110px;
+	    border-bottom: 2px dotted #789;
+		text-align: center;
+		font-size: 40px;
+        color: #789;
+		padding: 0 40px;
+		margin-bottom: 10px;}	
+
+header img {
+	float: left;
+	 }	
+
+nav {width: 270px;
+     background: #fc9;
+	 float: left;
+	 padding: 10px 10px 0 20px;
+	 color: #789;
+}
+
+ nav ul {
+	 padding-left: 20px;
+	 list-style: none;
+ }
+ 
+ nav a {
+	 color: #789;
+	 font-family: Arial, sans-serif;
+	 text-decoration: none;
+	 border: 1px solid #555;
+	 display: block;
+	 margin-bottom: 5px;
+	 padding: 5px;
+	 border-radius: 8px;
+	 background: #dfdfdf;
+ }
+ 
+ 
+ nav p {
+	 font-size: 1.3em;
+	 border-bottom: 2px dotted #789;
+	 margin: 15px 0;
+ }
+ main {
+    background: #fcf;
+	margin-left: 300px;
+	text-indent: 10px;
+	line-height: 1.5em;
+ }
+h1 {
+	font-size: 1.5em;
+	padding-bottom: 15px;
+	padding-left: 10px;
+}	
+
+main p{
+	font-family: Arial, sans-serif;
+	padding: 0 40px 20px 10px;
+}
+
+#for-print {
+	text-align: right;
+  }
+  
+ footer {line-height: 30px;
+	    border-top: 2px dotted #789;
+		text-align: center;
+		font-size: 25px;
+        color: #789;
+		margin-top: 10px;
+		padding: 5px;} 
+
+@media print {
+	body,
+	main {
+		background: transparent;}
+		
+	header {
+     font-size: 1.4em;}	 
+		
+		
+ nav,
+ #for-print {
+	 display: none;
+	 }
+ main {
+     margin-left: 0;}
+	 
+	 
+ h1 {
+   text-align: center;
+   }
+   
+ main p {
+    padding: 0 0 20px 0;}   	 
+}
+
+
+@media screen and (max-width: 1024px){
+	
+	h1 {
+		text-align: center;
+	}
+	
+	
+	      }
+		  
+@media screen and (max-width: 999px){
+	
+	header {
+		font-size: 1.3em;
+		font-weight: bolder;
+	}
+   h1 {
+	   font-size: 1.2em;
+   }
+	
+}
+		  
+
+
+@media screen and (max-width: 576px) {
+	
+	#root {
+		min-width: 300px;
+	    padding: 0 10px;}
+		
+   header {
+    font-size: 1.1em;
+	font-weight: bolder;
+   }	
+		
+   header img {
+	   float: none;
+	   display: block;
+	   margin: auto;
+	   padding-top: 3px;
+     }	
+	 
+	nav {
+		float: none;
+	    width: auto;
+		padding-bottom: 10px;}
+		
+	#for-print {
+	 display: none;}	
+	 
+	 main {
+     margin-left: 0;}
+	 
+     h1 {
+		text-align: center;
+		padding-top: 15px;}
+   
+     main p {
+          padding: 0 0 20px 0;}   
+	
+	
+}
+ 
